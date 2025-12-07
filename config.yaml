@@ -1,0 +1,22 @@
+audio:
+  sample_rate: 44100
+  record_duration: 10
+
+models:
+  llm_model: llama3.2
+  embedding_model: nomic-embed-text
+
+database:
+  chroma_db_path: ./chroma_db
+  collection_name: rag-edgeai-eng-chroma
+
+api_keys:
+  groq_api_key: ${GROQ_API_KEY}
+
+music_player:
+  mpv_socket_path: /tmp/mpv_socket
+
+general:
+  log_level: info
+  language: en
+  data_dir: ./data/musics
